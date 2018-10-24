@@ -1,3 +1,5 @@
+mod pm;
+
 enum Color {
     Red,
     Green,
@@ -59,4 +61,5 @@ fn unions() {
 fn main() {
     enums();
     unions();
+    pm::pattern_matching();
 }
