@@ -54,6 +54,10 @@ fn for_loop() {
         }
         println!("for loop x = {}", x);
     }
+
+    for (pos, y) in (31..40).enumerate() {
+        println!("{}: {}", pos, y);
+    }
 }
 
 fn main() {
