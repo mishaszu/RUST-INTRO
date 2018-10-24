@@ -1,4 +1,4 @@
-mod sh;
+mod stack_heap;
 
 fn heap() {
     let x = Box::new(5);
@@ -7,5 +7,5 @@ fn heap() {
 
 fn main() {
     heap();
-    sh::stack_and_heap();
+    stack_heap::run();
 }

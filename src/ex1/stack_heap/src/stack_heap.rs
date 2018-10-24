@@ -1,4 +1,3 @@
-// #[allow(dead_code)]
 use std::mem;
 
 struct Point {
@@ -10,7 +9,7 @@ fn origin() -> Point {
     Point { x: 0.0, y: 0.0 }
 }
 
-pub fn stack_and_heap() {
+fn stack_and_heap() {
     println!("text from stack and heap module");
     let p1 = origin();
     let p2 = Box::new(origin());
@@ -25,4 +24,9 @@ pub fn stack_and_heap() {
         p3.y,
         mem::size_of_val(&p3)
     );
+}
+
+pub fn run() {
+    println!("Running stack and heap");
+    stack_and_heap();
 }

@@ -21,6 +21,7 @@ fn operators() {
     println!("pi_less_4 = {}, higher = {}", pi_less_4, higher);
 }
 
-fn main() {
+pub fn run() {
+    println!("Running operators");
     operators();
 }

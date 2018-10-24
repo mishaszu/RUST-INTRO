@@ -14,3 +14,8 @@ pub fn pattern_matching() {
         println!("{}: I have {} oranges", x, how_many(x));
     }
 }
+
+pub fn run() {
+    println!("Running pattern maching");
+    pattern_matching();
+}

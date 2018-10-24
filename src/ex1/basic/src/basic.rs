@@ -1,6 +1,6 @@
 use std::mem;
 
-fn main() {
+fn basic() {
     println!("Hello, world!");
     let a: u8 = 123;
     println!("a = {}", a);
@@ -27,4 +27,9 @@ fn main() {
 
     let g = false;
     println!("g = {}, size = {} bytes", g, mem::size_of_val(&g));
+}
+
+pub fn run() {
+    println!("Running basic");
+    basic();
 }

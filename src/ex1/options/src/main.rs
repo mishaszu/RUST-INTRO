@@ -14,6 +14,14 @@ fn options() {
     if let Some(z) = result {
         println!("if let result: {}", z);
     };
+
+    let x: [u8; 3] = [1,2,3];
+
+    if let Some(z) = x.get(3) {
+        println!("z: {}", z);
+    } else {
+        println!("no match");
+    }
 }
 
 fn main() {

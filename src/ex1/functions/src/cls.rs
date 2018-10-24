@@ -22,6 +22,6 @@ fn closures() {
 }
 
 pub fn run() {
-    println!("running closures");
+    println!("Running closures");
     closures();
 }

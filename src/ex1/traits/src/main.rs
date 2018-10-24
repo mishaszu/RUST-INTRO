@@ -1,10 +1,10 @@
 mod traits;
-mod ol;
-mod staticDispatch;
+mod overloads;
+mod static_dispatch;
 
 fn main() {
     println!("Traits lessosn");
     traits::run();
-    ol::run();
-    staticDispatch::run();
+    overloads::run();
+    static_dispatch::run();
 }
