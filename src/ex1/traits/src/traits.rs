@@ -1,6 +1,6 @@
 trait Animal {
+    fn create(name: &'static str) -> Self;
     fn name(&self) -> &'static str;
-
     fn talk(&self) {
         println!("{} cannon talk", self.name());
     }
@@ -15,6 +15,9 @@ struct Cat {
 }
 
 impl Animal for Human {
+    fn create(name: &'static str) -> Human {
+        Human { name: name }
+    }
     fn name(&self) -> &'static str {
         self.name
     }
@@ -24,6 +27,9 @@ impl Animal for Human {
 }
 
 impl Animal for Cat {
+    fn create(name: &'static str) -> Cat {
+        Cat { name: name }
+    }
     fn name(&self) -> &'static str {
         self.name
     }
@@ -33,10 +39,19 @@ impl Animal for Cat {
 }
 
 fn traits() {
+    // simple create
     let john = Human { name: "John" };
     john.talk();
-    let misty = Cat {name: "Misty"};
+    let misty = Cat { name: "Misty" };
     misty.talk();
+    // create by static
+    let bob = Human::create("Bob");
+    bob.talk();
+    let sonic = Cat::create("Sonic");
+    sonic.talk();
+
+    let ana: Human = Animal::create("Ana");
+    ana.talk();
 }
 
 pub fn run() {
