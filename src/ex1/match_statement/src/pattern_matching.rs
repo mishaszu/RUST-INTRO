@@ -5,7 +5,7 @@ fn how_many(x: u8) -> &'static str {
         9...11 => "lof of",
         12 => "dozens",
         _ if (x % 2 == 0) => "some",
-        _ => "few"
+        _ => "few",
     }
 }
 

@@ -1,7 +1,7 @@
 mod arrays;
-mod vectors;
 mod slices;
 mod strings;
+mod vectors;
 
 fn main() {
     arrays::run();

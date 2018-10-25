@@ -1,9 +1,9 @@
-mod ownership;
+mod atomicReferenceCounted;
 mod borrow;
 mod lifetime;
-mod referenceCounted;
-mod atomicReferenceCounted;
 mod mutex;
+mod ownership;
+mod referenceCounted;
 
 fn main() {
     ownership::run();

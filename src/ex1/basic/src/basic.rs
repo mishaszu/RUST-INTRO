@@ -5,7 +5,7 @@ fn basic() {
     let a: u8 = 123;
     println!("a = {}", a);
 
-    let mut b:i8 = 0;
+    let mut b: i8 = 0;
     println!("b = {}", b);
     b = 125;
     println!("b = {}", b);
@@ -22,7 +22,7 @@ fn basic() {
     let d = 'c';
     println!("d = {}, size = {} bytes", d, mem::size_of_val(&d));
 
-    let e:f32 = 2.5;
+    let e: f32 = 2.5;
     println!("e = {}, size = {} bytes", e, mem::size_of_val(&e));
 
     let g = false;

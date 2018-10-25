@@ -1,6 +1,6 @@
-mod traits;
 mod overloads;
 mod static_dispatch;
+mod traits;
 
 fn main() {
     println!("Traits lessosn");

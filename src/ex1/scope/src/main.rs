@@ -1,5 +1,5 @@
 const MEANING_OF_LIFE: u8 = 42;
-static z:i32 = 123;
+static z: i32 = 123;
 
 fn scope1() {
     let a = 123;

@@ -1,6 +1,6 @@
 use std::rc::Rc;
-use std::thread;
 use std::sync::Arc;
+use std::thread;
 
 struct Person {
     name: Arc<String>,
