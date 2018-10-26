@@ -1,9 +1,12 @@
 //! The Rust Programming Language
 //! Chapter 4
 
+mod references;
 mod scope;
+mod slices;
 
 fn main() {
-    println!("Hello, world!");
     scope::run();
+    references::run();
+    slices::run();
 }
