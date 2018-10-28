@@ -14,7 +14,7 @@ fn mean(v: &Vec<i32>) -> f64 {
 fn median(v: &mut Vec<i32>) -> i32 {
     v.sort();
     let index: usize = {
-        if (v.len() % 2 == 0) {
+        if v.len() % 2 == 0 {
             (v.len() / 2) as usize - 1
         } else {
             (v.len() as f64 / 2.0).floor() as usize
@@ -29,7 +29,7 @@ fn mode(v: &Vec<i32>) -> HashMap<i32, i32> {
     for i in v {
         let count = map.entry(*i).or_insert(0);
         *count += 1;
-    };
+    }
     map
 }
 
