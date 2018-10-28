@@ -1,3 +1,5 @@
+mod work_with_numbers;
+
 fn main() {
-    println!("Hello, world!");
+    work_with_numbers::run();
 }
