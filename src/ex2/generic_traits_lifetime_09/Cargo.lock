@@ -1,0 +1,11 @@
+[[package]]
+name = "generic_traits_lifetime_09"
+version = "0.1.0"
+dependencies = [
+ "my_lib 0.1.0",
+]
+
+[[package]]
+name = "my_lib"
+version = "0.1.0"
+

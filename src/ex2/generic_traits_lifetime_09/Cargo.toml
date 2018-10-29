@@ -1,0 +1,9 @@
+[package]
+name = "generic_traits_lifetime_09"
+version = "0.1.0"
+authors = ["Misha Szulczewski <mishaszu@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+[dependencies.my_lib]
+path = "my_lib"
